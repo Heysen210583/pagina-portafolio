@@ -1,0 +1,233 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+body::-webkit-scrollbar{
+	width: 16px;
+	background: #e7e7ea;
+}
+
+body::-webkit-scrollbar-thumb{
+	background: #03c9d2;
+	border-radius: 2px;
+	border-right: 2px solid #561bed;
+}
+
+
+header{
+	background: #561bec;
+	width: 100%;
+	/*box-shadow: 0 0 6px rgba(0, 0, 0, .5);*/
+	position: fixed;
+	z-index: 2000;
+}
+
+nav.contenedor{
+	height: 70px;
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+div.logo{
+	height: 30px;
+}
+
+.logo img{
+	height: 100%;
+	vertical-align: top;
+	padding-left: 20px;
+}
+
+nav a{
+	width: 100%;
+	font-weight: 300;
+	text-align: center;
+	padding: 20px;
+	color: #f1f1f1;
+	/*margin-right: 10px;*/
+	border-bottom: 0.1px solid #fff;
+}
+
+nav a:hover{
+	background: #5fd6de;
+	color: #fff;
+	text-shadow: 2px 0px 1px #5b5555;	
+}
+
+.hamburguesa{
+	height: 18%;
+	width: 6%;
+	text-align: center;
+	cursor: pointer;
+    margin: 20px;
+    display: none;
+}
+
+.hamburguesa img{
+	vertical-align: top;
+	/*padding: 23px;*/
+}
+
+
+
+
+
+
+
+
+
+section.conten0{
+	width: 100%;
+	padding-top: 6.1rem;
+}
+
+div.fotografia{
+	width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+div.fotografia img{
+	width: 150px;
+    z-index: 19;
+    position: relative;
+	box-shadow: 6px 7px 17px -3px black;
+}
+
+section.conten0 h1{
+	font-weight: 500;
+	font-size: 22px;
+	color: #34373c;
+	margin-top: 40px;
+	text-align: center;
+}
+
+section.conten0 h3{
+	font-weight: bold;
+	color: #34373c;
+	margin-top: 5px;
+	text-align: center;
+}
+
+section.conten0 p{
+	color: #42464e;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 30px;
+	text-align: center;
+}
+
+section.conten0 div.base{
+	width: 100%;
+}
+
+section.conten0 div.base div.cuadrado{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	background-color: #561bed;
+}
+
+.myButton {
+    -moz-box-shadow: 4px 3px 6px 2px #3dc21b;
+    -webkit-box-shadow: 4px 3px 6px 2px #3dc21b;
+    box-shadow: 4px 3px 6px 2px #a7a7a7;
+    background-color: #561bed;
+    border-radius: 2px;
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 22px 33px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #561bed;
+    text-align: center;
+    max-width: 195px;
+    width: 100%;
+    margin: auto;
+}
+
+.myButton:hover {
+	background-color:#3103a7;
+	box-shadow: 0px 0px 0px 0px #a7a7a7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+/*@media only screen and (max-width: 767px){
+
+span.menu-icon{
+	display: block;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+}
+
+nav.navigation{
+	width: 100%;
+	margin-top: 1rem;
+}
+
+nav.navigation ul{
+	display: none;
+}
+
+nav.navigation ul.show{
+	display: block;
+}
+
+nav.navigation ul li{
+	display: block;
+}
+
+nav.navigation ul li a{
+	display: block;
+	padding: 0.5rem 0;
+}
+
+nav.navigation ul li a:hover{
+	background: #03c9d2;
+	transition: all 0.4s linear;
+	border-radius: 5px;
+}
+
+}*/
+
+
+@media screen and (max-width: 800px){
+	.hamburguesa{
+		display: block;
+	}
+
+	.enlaces{
+		position: fixed;
+		background: rgba(86,26,237,0.9);
+		left: 0;
+		top: 70px;
+		width: 100%;
+		height: 58vh;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+		transform: translateX(-100%);
+	}
+
+	.enlaces2{
+		transform: translateX(0%);
+	}
+}
